@@ -11,6 +11,7 @@ This API takes 2 parameters as input in JSON format that includes - the "model" 
 <br>
 
 | INPUT | OUTPUT | ERROR OUTPUT |
+| ---      | ---       |  ---      |
 |{ model: "Civic"; year: 2014 }  | { car_value: 6614 }  |{ error: "there is an error"}  |
 <br>
 
@@ -26,6 +27,7 @@ This API takes 1 parameters as input in JSON format that has a text field descri
  
 
 | INPUT | OUTPUT | ERROR OUTPUT |
+| ---      | ---       |  ---      |
 { claim_history: "My only claim was a crash into my house's garage door that left a scratch on my car.  There are no other crashes." }	{ risk_rating: 3 }	{ error: "there is an error"}
 <br>
 
@@ -40,6 +42,7 @@ This API takes 2 parameters as input in JSON format that includes - the "car val
 <br>
 
 | INPUT | OUTPUT | ERROR OUTPUT |
+| ---      | ---       |  ---      |
 { car_value: 6614; risk_rating: 5}	{ monthly_premium: 27.5; yearly_premium: 330}	{ error: "there is an error"}
 <br>
  
@@ -57,6 +60,7 @@ For your chosen API, write test cases to cover all the scenarios.  Remember to w
 <br>
 
 | Test Case Number | Input (model, year) | Expected Output ($ value) | Test Description |  
+| ---      | ---       |  ---      |  ---      |
 | 1 | "Civic", 2020 | 6600 | Sunny day scenario | 
 | 2 | "911", 2020 | 2020 | Numbers only is ok | 
 | 3 | "Task-Force", -987 | error message | Negative year | 
@@ -71,18 +75,18 @@ Task 6. Create unit tests
 Choose at least 5 of the test cases you designed, implement them as a set of automated unit test using one of the unit testing frameworks.
 
 The following resources may help:
-RECOMMENDED API Unit testing in JavaScript https://www.digitalonus.com/getting-started-with-api-test-automation-using-javascript/ (2 hours)
-RECOMMENDED API Unit testing with Python: https://blog.eduonix.com/software-development/go-guide-api-testing-using-pytest/ (2 hours)
-RECOMMENDED API Unit testing in .NET https://medium.com/@mourya.vikas/api-automation-using-c-f93c8dc0daaf (2 hours)
+<li>RECOMMENDED API Unit testing in JavaScript https://www.digitalonus.com/getting-started-with-api-test-automation-using-javascript/ (2 hours)</li>
+<li>RECOMMENDED API Unit testing with Python: https://blog.eduonix.com/software-development/go-guide-api-testing-using-pytest/ (2 hours)</li>
+<li>RECOMMENDED API Unit testing in .NET https://medium.com/@mourya.vikas/api-automation-using-c-f93c8dc0daaf (2 hours)</li>
 <br>
 
 Task 7. Create API
 Now that you created the unit tests, build your chosen API.  Test your API against your unit tests as you go, until you pass all the tests.
 
 The following resources may help:
-RECOMMENDED Building an API in Node.js https://www.youtube.com/watch?v=TcvOgwQPsSo (30 mins)
-RECOMMENDED Building an API in Python https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f (30 mins)
-RECOMMENDED Building an API in .NET https://learn.microsoft.com/en-us/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api (30mins)
+<li>RECOMMENDED Building an API in Node.js https://www.youtube.com/watch?v=TcvOgwQPsSo (30 mins)</li>
+<li>RECOMMENDED Building an API in Python https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f (30 mins)</li>
+<li>RECOMMENDED Building an API in .NET https://learn.microsoft.com/en-us/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api (30mins)</li>
 <br>
 
 Task 8. Code Review
