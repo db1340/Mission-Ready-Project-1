@@ -69,11 +69,11 @@ For your chosen API, write test cases to cover all the scenarios.  Remember to w
 <br>
 
 
-
 ### Built With
 <li>Javascript</li>
 <li>Postman API</li>
 <br>
+
 
 ## Setup
 
@@ -96,7 +96,13 @@ To get started, follow these steps:
 5. Start the server:
    
    ```
-   npm start
+   npm run dev
+   ```
+
+6. To check for errors:
+   
+   ```
+   npm test
    ```
 
 By default, the server runs on port 4001, but you can modify the `port` variable in `server.js` to change it.
