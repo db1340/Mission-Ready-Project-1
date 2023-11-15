@@ -120,13 +120,30 @@ By the end of Thursday, upload all of your work (screenshots, presentation slide
 <li>Postman API</li>
 <br>
 
-## Usage
-API Project using Postman API.
-<br>
+To get started, follow these steps:
 
-## License
-Distributed under the MIT License.
-<br>
+1. Install Node.js
+
+2. Clone this repository to your local machine:
+
+   ```
+   git clone <repository_url>
+   ```
+
+3. Install project dependencies:
+
+   ```
+   npm install
+   ```
+
+5. Start the server:
+   
+   ```
+   npm start
+   ```
+
+By default, the server runs on port 4001, but you can modify the `port` variable in `server.js` to change it.
+
 
 ## Contact
 Daryl Brian Bonilla - darylb@missionreadyhq.com
