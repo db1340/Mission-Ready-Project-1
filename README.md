@@ -68,16 +68,14 @@ For your chosen API, write test cases to cover all the scenarios.  Remember to w
 | 4 | "C200", "twenty twenty" | error message | Negative year | 
 <br>
 
-The following resources may help:
-​​​​​​​​​​​​​​REQUIRED Designing Test Cases http://sqa.fyicenter.com/art/Designing_Unit_Test_Cases.html (1 hour)
-<br>
-<br>
 
 
 ### Built With
 <li>Javascript</li>
 <li>Postman API</li>
 <br>
+
+## Setup
 
 To get started, follow these steps:
 
