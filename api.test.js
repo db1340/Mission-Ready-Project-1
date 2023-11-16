@@ -276,4 +276,3 @@ describe("Risk Rating API", () => {
   })
 })
 
-

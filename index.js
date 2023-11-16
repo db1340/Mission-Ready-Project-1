@@ -125,7 +125,7 @@ app.post('/riskrating', (req, res) => {
     const claim_history = countRisks(history);
 
     if ("error" in data) {
-      return res.status(400).json(claim_history);
+      return res.status(400).json(claim_history); // Check if there is an error in the data object
     }
     
     res.json({risk_rating: claim_history});
@@ -133,6 +133,56 @@ app.post('/riskrating', (req, res) => {
     res.status(400).json({ error: error.message });
   }
 });
+
+
+
+//API 3 - Converting the "Car Value" and "Risk Rating" to a "Quote"
+function calculateQuote(car_value, risk_rating) {
+  try {
+      // Parse the input JSON
+      const inputData = JSON.parse(car_value, risk_rating);
+
+      // Extract car value and risk rating from the input data
+      const carValue = parseFloat(inputData.car_value) || 0;
+      const riskRating = parseInt(inputData.risk_rating) || 0;
+
+      // Validate the input values
+      if (carValue <= 0 || riskRating < 1 || riskRating > 5) {
+        return { error: "There is an error" };
+      }
+
+      // The premium is calculated based on the given Business Rules
+      const yearlyPremium = (carValue * riskRating)/100;
+      const monthlyPremium = yearlyPremium / 12;
+      
+
+      // Formats the output JSON
+      const outputData = {
+          monthly_premium: `$${monthlyPremium.toFixed(2)}`,
+          yearly_premium: `$${yearlyPremium.toFixed(2)}`
+      };
+
+      // Converts the output data to JSON format
+      return JSON.stringify(outputData);
+
+    
+
+  } catch (error) {
+      return `{"error": "${error.message}"}`;
+  }
+}
+
+//API 3 endpoint
+app.post('/carquote', (req, res) => {
+  try {
+      const inputJson = JSON.stringify(req.body);
+      const result = calculateQuote(inputJson);
+      res.json(result);
+  } catch (error) {
+      res.status(400).json({ error: error.message });
+  }
+});
+
 
 
 app.listen(port, () => {
