@@ -1,9 +1,7 @@
 # Mission-1
 Buying Experience Re-design at Turners Car Insurance
 
-Tasks for Professional Software Developers
-
-​​​​​In this Mission, you will be working on the backend and apply an Agile practice of Test-Driven Development (TDD).  As part of the project, there are 3 RESTful APIs that are required as part of the insurance purchasing process. 
+​​​​​For this Mission, you will be working on the backend and apply an Agile practice of Test-Driven Development (TDD).  As part of the project, there are 3 RESTful APIs that are required as part of the insurance purchasing process. 
 
 API 1. Convert "Model" and "Year" of a car to a suggested "Car Value"
 
@@ -70,65 +68,47 @@ For your chosen API, write test cases to cover all the scenarios.  Remember to w
 | 4 | "C200", "twenty twenty" | error message | Negative year | 
 <br>
 
-The following resources may help:
-​​​​​​​​​​​​​​REQUIRED Designing Test Cases http://sqa.fyicenter.com/art/Designing_Unit_Test_Cases.html (1 hour)
-<br>
-<br>
-
-Task 6. Create unit tests
-Choose at least 5 of the test cases you designed, implement them as a set of automated unit test using one of the unit testing frameworks.
-
-The following resources may help:
-<li>RECOMMENDED API Unit testing in JavaScript https://www.digitalonus.com/getting-started-with-api-test-automation-using-javascript/ (2 hours)</li>
-<li>RECOMMENDED API Unit testing with Python: https://blog.eduonix.com/software-development/go-guide-api-testing-using-pytest/ (2 hours)</li>
-<li>RECOMMENDED API Unit testing in .NET https://medium.com/@mourya.vikas/api-automation-using-c-f93c8dc0daaf (2 hours)</li>
-<br>
-<br>
-
-Task 7. Create API
-Now that you created the unit tests, build your chosen API.  Test your API against your unit tests as you go, until you pass all the tests.
-
-The following resources may help:
-<li>RECOMMENDED Building an API in Node.js https://www.youtube.com/watch?v=TcvOgwQPsSo (30 mins)</li>
-<li>RECOMMENDED Building an API in Python https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f (30 mins)</li>
-<li>RECOMMENDED Building an API in .NET https://learn.microsoft.com/en-us/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api (30mins)</li>
-<br>
-<br>
-
-Task 8. Code Review
-Obtain feedback on your code from your team member by allowing them to review your code. Make any necessary changes to the code after the feedback. Similarly, review their code by pointing out the code smells and offering a solution.
-<br>
-
-The following resources may help:
-<li>​​​​​​​​​​​​​​RECOMMENDED Code smells https://blog.codinghorror.com/code-smells/</li>
-<br>
-<br>
-
-Task 9. Present at Show and Tell
-At the Show and Tell next week, your team will jointly present the tasks it has completed.  This presentation should be designed to take around 5 minutes for each team member – so, if you are in a 4-people team you have up 20 minutes in total.  The time limit will be strictly enforced.  You can use PowerPoint slides, Sway or Prezi to help with your presentation. You are encouraged to demonstrate the live API and tests.
-<br>
-<br>
-
-
-Task 10. Submit your work
-By the end of Thursday, upload all of your work (screenshots, presentation slides, documents or other files) using the mission submission form.
-<br>
-<br>
 
 ### Built With
 <li>Javascript</li>
 <li>Postman API</li>
 <br>
 
-## Usage
-API Project using Postman API.
-<br>
 
-## License
-Distributed under the MIT License.
-<br>
+## Setup
+
+To get started, follow these steps:
+
+1. Install Node.js
+
+2. Clone this repository to your local machine:
+
+   ```
+   git clone <repository_url>
+   ```
+
+3. Install project dependencies:
+
+   ```
+   npm install
+   ```
+
+5. Start the server:
+   
+   ```
+   npm run dev
+   ```
+
+6. To check for errors:
+   
+   ```
+   npm test
+   ```
+
+By default, the server runs on port 4001, but you can modify the `port` variable in `server.js` to change it.
+
 
 ## Contact
 Daryl Brian Bonilla - darylb@missionreadyhq.com
 
-Project Link: https://github.com/db1340/Mission-0.git
+Project Link: https://github.com/db1340/Mission-Ready-Task-1.git
